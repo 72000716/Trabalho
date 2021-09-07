@@ -62,4 +62,55 @@ function informacoesDaConta(numero){
     }
 }
 
-console.log("Teste")
+function MenuPrincipal()
+        {
+            let tecla
+            cadastrarConta()
+
+            do
+            {
+                Console.log()
+                Console.log("Pressione qualquer tecla para continuar")
+
+                Console.ReadKey()
+
+                Console.Clear()
+
+                Console.log("----------------------")
+                Console.log("    F2    |   EXTRATO ")
+                Console.log("----------------------")
+                Console.log("    F3    |    SAQUE  ")
+                Console.log("----------------------")
+                Console.log("    F4    |  DÉPOSITO ")
+                Console.log("----------------------")
+                Console.log("   ESC    |    SAIR   ")
+                Console.log("----------------------")
+                tecla = Console.ReadKey();
+                Console.log("");
+
+                switch (tecla.Key)
+                {
+                    case ConsoleKey.F2:
+                        informacoesDaConta()                    
+                        break;
+
+                    case ConsoleKey.F3:
+                        sacar()
+                        break;
+
+                    case ConsoleKey.F4:
+                        depositar()
+                        break;
+
+                    case ConsoleKey.Escape:
+                        Console.log("Saindo do programa!")
+                        break;
+
+                    default:
+                        break;
+                }
+
+            } while (tecla.Key != ConsoleKey.Escape)
+        }
+
+    

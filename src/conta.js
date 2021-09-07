@@ -61,3 +61,5 @@ function informacoesDaConta(numero){
         console.log('Conta não encontrada')
     }
 }
+
+console.log("Teste")

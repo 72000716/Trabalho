@@ -113,4 +113,6 @@ function MenuPrincipal()
             } while (tecla.Key != ConsoleKey.Escape)
         }
 
+console.log(MenuPrincipal)
+
     
